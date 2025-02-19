@@ -50,16 +50,32 @@
         justify-content: center;
         align-items: center;
         width: calc(100% - 240px);
+        height: 100vh;
+        /* Garante que a área do formulário ocupe a tela toda */
     }
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
-        padding: 20px;
+        align-content: center;
+        padding: 30px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
     }
 
     input,
@@ -87,6 +103,6 @@
     <ul>
         @for ($i = 1; $i <= 20; $i++)
             <li><a href="{{ route('exercicio', ['id' => $i]) }}">Exercício {{ $i }}</a></li>
-        @endfor
+            @endfor
     </ul>
 </nav>

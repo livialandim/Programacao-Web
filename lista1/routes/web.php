@@ -19,6 +19,10 @@ Route::get('/bem-vindo', function () {
     return "Seja bem-vindo!";
 });
 
+Route::get('/exercicio/{id}', function ($id) {
+    return view("lista.exerc$id");
+})->name('exercicio');
+
 /* Criando uma rota para o exercício 1, que está na pasta lista */
 Route::get('/exerc1', function () {
     return view('lista.exerc1');
@@ -140,7 +144,7 @@ Route::get('/exerc9', function () {
 Route::post('/listaexerc9', function (Request $request) {
     $metros = floatval($request->input('metros'));
 
-    $centimetros = $metros * 100;
+    $centimetros = $metros / 100;
 
     return view('lista.exerc9', compact('centimetros'));
 });

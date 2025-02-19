@@ -6,13 +6,18 @@
 
     @csrf <!-- Obrigatório ter -->
     <div class="mb-3">
-        <label for="valor1" class="form-label">Informe o primeiro valor</label>
-        <input type="number" id="valor1" name="valor1" class="form-control" required="">
+        <label for="valor1" class="form-label">Informe a primeira nota</label>
+        <input type="number" id="nota1" name="nota1" class="form-control" required="">
     </div>
 
     <div class="mb-3">
-        <label for="valor2" class="form-label">Informe o segundo valor</label>
-        <input type="number" id="valor2" name="valor2" class="form-control" required="">
+        <label for="valor2" class="form-label">Informe a segunda nota</label>
+        <input type="number" id="nota2" name="nota2" class="form-control" required="">
+    </div>
+
+    <div class="mb-3">
+        <label for="valor2" class="form-label">Informe a terceira nota</label>
+        <input type="number" id="nota3" name="nota3" class="form-control" required="">
     </div>
 
     <button type="submit" class="btn btn-primary">Enviar</button>
@@ -20,7 +25,7 @@
 
 @isset($soma)
 
-    <p>O valor da soma é igual a: {{ $soma }}</p>
+    <p>A média das notas é igual a: {{ $soma }}</p>
 
 @endisset
 

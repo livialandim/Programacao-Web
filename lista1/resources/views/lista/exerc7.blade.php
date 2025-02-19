@@ -1,13 +1,13 @@
 <!--
 Crie um formulário que permita ao usuário inserir o raio de um círculo. O script PHP deve 
-calcular a área do círculo (πr²) e exibir o resultado.
+calcular o perímetro do círculo (2πr) e exibir o resultado.
 -->
 
 @extends('layout')
 
 @section('conteudo')
 
-<form method="post" action="/listaexerc5">
+<form method="post" action="/listaexerc7">
 
     @csrf
 
@@ -19,9 +19,9 @@ calcular a área do círculo (πr²) e exibir o resultado.
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
-@isset($area)
+@isset($perimetro)
 
-    <p>A área do círculo é: {{ $area }}</p>
+    <p>A área do círculo é: {{ $perimetro }}</p>
 
 @endisset
 

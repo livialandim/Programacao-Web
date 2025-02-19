@@ -1,10 +1,15 @@
-@extends('layout') <!-- Pega o conteúdo do layout -->
+<!-- 
+Crie um formulário que permita ao usuário inserir uma temperatura em Celsius. O script PHP 
+deve converter essa temperatura para Fahrenheit e exibir o resultado.
+-->
 
-@section('conteudo') <!-- Tudo o que estiver dentro da seção será embutido na seção conteúdo-->
+@extends('layout')
+
+@section('conteudo')
 
 <form method="post" action="/listaexerc2">
 
-    @csrf <!-- Obrigatório ter -->
+    @csrf
 
     <div class="mb-3">
         <label for="celsius" class="form-label">Informe a temperatura em Celsius</label>
@@ -20,4 +25,4 @@
 
 @endisset
 
-@endsection <!-- Finaliza a seção conteúdo -->
+@endsection

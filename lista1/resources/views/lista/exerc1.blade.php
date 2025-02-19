@@ -1,3 +1,8 @@
+<!-- 
+Crie um formulário que permita ao usuário inserir três notas. O script PHP deve calcular a 
+média das notas e exibir o resultado. 
+-->
+
 @extends('layout') <!-- Pega o conteúdo do layout -->
 
 @section('conteudo') <!-- Tudo o que estiver dentro da seção será embutido na seção conteúdo-->

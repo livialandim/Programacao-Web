@@ -1,13 +1,13 @@
 <!--
 Crie um formulário que permita ao usuário inserir a largura e a altura de um retângulo. O script 
-PHP deve calcular a área do retângulo e exibir o resultado.
+PHP deve calcular o perímetro do retângulo e exibir o resultado.
 -->
 
 @extends('layout')
 
 @section('conteudo')
 
-<form method="post" action="/listaexerc4">
+<form method="post" action="/listaexerc6">
 
     @csrf
 
@@ -24,9 +24,9 @@ PHP deve calcular a área do retângulo e exibir o resultado.
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
-@isset($area)
+@isset($perimetro)
 
-    <p>A área do retângulo é: {{ $area }}</p>
+    <p>O perímetro do retângulo é: {{ $perimetro }}</p>
 
 @endisset
 

@@ -5,6 +5,7 @@
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+/* use app\Http\Controllers\ExercicioController; */
 
 /* Utilizar a classe Route para definir as aplicações, utilizando os métodos disponíveis */
 
@@ -28,6 +29,10 @@ Route::get('/exerc1', function () {
     return view('lista.exerc1');
 });
 
+/*
+Route::get('/exerc1', [ExercicioController::class, Exercicio1]);
+*/
+
 /* Define a rota que recolhe os dados do formulário*/
 Route::post('/listaexerc1', function (Request $request) {
     /* Acessando os campos do formulário */
@@ -38,6 +43,10 @@ Route::post('/listaexerc1', function (Request $request) {
 
     return view('lista.exerc1', compact('media')); /* compact: transforma variáveis em array */
 });
+
+/* 
+Route::get('/exerc1', [ExercicioController::class, RespostaExercicio1]);
+*/
 
 // EXERCÍCIO 2
 Route::get('/exerc2', function () {

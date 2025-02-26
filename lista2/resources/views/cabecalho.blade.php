@@ -101,7 +101,7 @@
 
 <nav>
     <ul>
-        @for ($i = 1; $i <= 15; $i++)
+        @for ($i = 1; $i <= 10; $i++)
             <li><a href="{{ route('exercicio', ['id' => $i]) }}">Exercício {{ $i }}</a></li>
             @endfor
     </ul>
